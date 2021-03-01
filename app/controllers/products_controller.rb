@@ -2,7 +2,7 @@
 class ProductsController < ApplicationController
   def index
     @products = session[:cart]
-    binding.pry
+byebug
   end
 
   def add

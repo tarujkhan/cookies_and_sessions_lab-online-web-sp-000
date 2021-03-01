@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   #  @products = Product.find(params[:id])
   cart = session[:cart] || []
 #  cart << @products.id
-#  session[:cart] = cart
+  session[:cart] = cart
   end
 end

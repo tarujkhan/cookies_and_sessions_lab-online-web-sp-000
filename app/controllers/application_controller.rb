@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   #  @products = Product.find(params[:id])
   cart = session[:cart] || []
 #  cart << @products.id
-  session[:cart] = cart # creates a new key with an emptyarray if no array exists
+  session[:cart] = cart # creates a new key with an emptyarray if no array exists - over ride the nil balue with empty array
   end
 end

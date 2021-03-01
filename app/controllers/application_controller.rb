@@ -9,6 +9,3 @@ class ApplicationController < ActionController::Base
   session[:cart] = cart
   end
 end
-
-
-

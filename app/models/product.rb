@@ -3,3 +3,4 @@ class Prodcut < ActiveRecord::Base
 
     resources :products, only: [:index, :add]
   end
+end

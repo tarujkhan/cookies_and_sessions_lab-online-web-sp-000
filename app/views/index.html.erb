@@ -1,0 +1,7 @@
+<% @products.each do |product| %>
+<%= product.name %>
+<%= form_tag products_path do %>
+<label>Product name:</label>
+<%= text_field_tag :'product[name]' %>
+<%= submit_tag 'Submit Product' %>
+<% end %>

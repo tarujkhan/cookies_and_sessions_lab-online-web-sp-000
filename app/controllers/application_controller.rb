@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
 end
 
-
+private
 def cart
   @products = Product.find(params[:id])
 cart = session[:cart] || []
